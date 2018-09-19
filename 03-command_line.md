@@ -20,7 +20,17 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > pwd: print working directory
+> > mkdir: make directory
+> > rm -R: delete directory and all contents
+> > touch filename.txt: create file
+> > rm: delete file
+> > mv: move file to new location (rename)
+> > -a: extension to list all hidden files and folders
+> > cp: copy file to specified location
+> > ls: list contents of current directory
+> > clear: erase the text in the shell
+
 
 ---
 
@@ -35,7 +45,13 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > ls: lists contents of current directory
+> > ls -a: lists contents of current directory, including hidden files or folders
+> > ls -l: lists contents of current directory in long form
+> > ls -lh:lists contents of current directory in long form and humanreadable format
+> > ls -lah:lists contents of current directory in long form, including hidden files or folders, and humanreadable format
+> > ls -t: lists contents of current directory sorted by timestamp
+> > ls -Glp: lists contents of current directory in different color text (?) in long form and path format (forward slash at end)
 
 ---
 
@@ -43,7 +59,7 @@ What do the following commands do:
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > -C, -m, -r, -R, -u
 
 ---
 
@@ -51,7 +67,6 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
-
- 
-
+> > ### xargs converts standard input into command line input
+> > find /directory -name filename -type f -print | xargs /bin/rm -f 
+> > ### this will find any file in /directory with "filename" in the name and pass each one individually through the remove command to be deleted
